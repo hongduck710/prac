@@ -7,8 +7,7 @@ document.write("<a href='https://www.youtube.com/watch?v=OCCpGh4ujb8&list=PLv2d7
 
 var a = 5;              
 
-//2. variable
-//let(added in ES6)
+//2. variable, rw(read/write): 읽고 쓰는 것이 가능
 let globalName = 'global name';
 
 {
@@ -33,11 +32,21 @@ console.log(globalName);
 
 console.log(commi);
 
-//3. constance: 가리키는 포인터가 잠겨있음(값 변경 불가능)
+//3. constant: 가리키는 포인터가 잠겨있음(값 변경 불가능), r(read only): 읽기만 가능
 /*
 - 보안
 - 
 */
+const daysInWeek = 7;
+const maxNumber = 5;
+
+//Immutable data types: primitive types, frozen objects (i.e. object.freeze())
+/*
+Mutable data types: all objects by default are mutable in JS: 
+자바스크립트에서 기본적으로 모든 오브젝트는 변경 가능,
+어레이는 mutable 데이터 타입
+*/
+
 
 //4. virable types
 //primitive, single item: number, string, boolean, null, undefinedn
